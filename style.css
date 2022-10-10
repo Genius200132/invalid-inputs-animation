@@ -1,0 +1,22 @@
+.style{
+position: absolute;
+height: 50%;
+width: 50%;
+}
+
+input{
+    border-color: white;
+    border-radius: 0.9375rem;
+    box-sizing: content-box;
+    width: 28rem;
+}
+    
+input:invalid {
+    animation: shake .10s;
+}
+
+@keyframes shake {
+    25% { transform: translateX(0.25rem) }
+    50% { transform: translateX(-0.25rem) }
+    75% { transform: translateX(0.25rem) }
+}
